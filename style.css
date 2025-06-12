@@ -2,7 +2,10 @@
 
 :root{
     --fonte: "Montserrat", sans-serif;
-    --cor-completo: #888;
+    --cinza: #888;
+    --azul-escuro: rgba(0, 0, 255, 0.74);
+    --vermelho: red;
+    --branco: white;
 }
 
 *{
@@ -30,14 +33,48 @@ h1{
 }
 
 input[type="text"]{
-    height: 68px;
+    height: 88px;
     border-radius: 10px;
-    width: 350px;
+    width: 650px;
     font-size: 20px;
     padding: 0px 10px;
 }
 
+ul#lista {
+    list-style: none;
+    padding: 0;
+}
+
+ul#lista li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    margin-top: 30px;
+    height: 108px;
+    width: 650px;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 0px 20px;
+    color: var(--branco);
+    background-color: var(--azul-escuro);
+}
+
+button.btn-remove {
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--branco);
+}
+
+button.btn-remove:hover{
+    color: var(--vermelho);
+}
+
 .completo{
     text-decoration: line-through;
-    color: var(--cor-completo)
+    color: var(--cinza)
 }
+
+
