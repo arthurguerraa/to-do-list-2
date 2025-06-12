@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte: "Montserrat", sans-serif;
+    --cor-completo: #888;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +13,7 @@
 
 body{
     height: 100%;
+    font-family: var(--fonte);
 }
 
 .container{
@@ -13,16 +21,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 
 h1{
     text-align: center;
+    padding: 0px 0px 10px 0;
 }
 
 input[type="text"]{
-    
+    height: 68px;
+    border-radius: 10px;
+    width: 350px;
+    font-size: 20px;
+    padding: 0px 10px;
 }
 
-.btn-add{
-    width: 80px;
+.completo{
+    text-decoration: line-through;
+    color: var(--cor-completo)
 }
