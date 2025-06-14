@@ -15,7 +15,7 @@ function adicionarTarefa(){
     btnRemove.classList.add('btn-remove');
 
     li.addEventListener('click', () =>{
-        li.classList.toggle('completo');
+        span.classList.toggle('completo');
     });
 
     btnRemove.addEventListener('click', () =>{
