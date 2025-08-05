@@ -1,80 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-:root{
-    --fonte: "Montserrat", sans-serif;
-    --cinza: #888;
-    --azul-escuro: rgba(0, 0, 255, 0.74);
-    --vermelho: red;
-    --branco: white;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    height: 100%;
-    font-family: var(--fonte);
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-h1{
-    text-align: center;
-    padding: 0px 0px 10px 0;
-}
-
-input[type="text"]{
-    height: 88px;
-    border-radius: 10px;
-    width: 650px;
-    font-size: 20px;
-    padding: 0px 10px;
-}
-
-ul#lista {
-    list-style: none;
-    padding: 0;
-}
-
-ul#lista li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 6px;
-    margin-top: 30px;
-    height: 108px;
-    width: 650px;
-    border-radius: 10px;
-    font-size: 24px;
-    padding: 0px 20px;
-    color: var(--branco);
-    background-color: var(--azul-escuro);
-}
-
-button.btn-remove {
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    color: var(--branco);
-}
-
-button.btn-remove:hover{
-    color: var(--vermelho);
-}
-
-.completo{
-    text-decoration: line-through;
-    color: var(--cinza)
-}
-
-
+        :root{
+            --fonte: "Montserrat", sans-serif;
+            --cinza: #888;
+            --azul-escuro: rgba(0, 0, 255, 0.74);
+            --vermelho: red;
+            --branco: white;
+        }
+        *{ 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        body{ 
+            min-height: 100vh; 
+            font-family: var(--fonte);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .container{ 
+            margin-top: 40px; 
+            width: 90%; 
+            max-width: 650px; 
+        }
+        h1{ 
+            text-align: center; 
+            margin-bottom: 20px; 
+        }
+        input[type="text"]{
+            width: 100%; 
+            height: 50px; 
+            border-radius: 10px; 
+            font-size: 18px; 
+            padding: 0 10px;
+        }
+        ul#lista { 
+            list-style: none; 
+            padding: 0; 
+            margin: 20px 0; 
+        }
+        ul#lista li{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-bottom: 10px; 
+            padding: 10px 20px; 
+            height: auto;
+            border-radius: 10px; 
+            font-size: 20px; 
+            color: var(--branco);
+            background-color: var(--azul-escuro); 
+            transition: all 0.3s ease;
+        }
+        ul#lista li .completo{ 
+            text-decoration: line-through; 
+            color: var(--cinza); 
+        }
+        button.btn-remove {
+            background: transparent; 
+            border: none; 
+            font-size: 20px; 
+            cursor: pointer; 
+            color: var(--branco);
+        }
+        button.btn-remove:hover{ 
+            color: var(--vermelho); 
+        }
+        .footer{
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            margin-top: 10px;
+        }
+        #btn-limpar{
+            padding: 5px 10px; border: none; border-radius: 5px;
+            cursor: pointer; font-size: 16px;
+        }
